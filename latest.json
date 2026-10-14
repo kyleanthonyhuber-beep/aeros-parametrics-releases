@@ -1,0 +1,9 @@
+{
+  "version": "0.2.1",
+  "notes": "desktop: publish via write deploy key to releases branch; raw.githubusercontent feed",
+  "msiName": "AerosParametrics-0.2.1.msi",
+  "msiUrl": "https://raw.githubusercontent.com/kyleanthonyhuber-beep/aeros-parametrics-releases/releases/AerosParametrics-0.2.1.msi",
+  "sha256": "6afe1ec4a2b3c791e9e8e0eed948dece6af037dd55813911d5aac492e1225990",
+  "size": 81564496,
+  "published": "2026-10-14T20:37:39Z"
+}
