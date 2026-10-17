@@ -1,0 +1,23 @@
+{
+  "version": "0.2.2",
+  "notes": "Fixes 0.2.1 failing to launch.\n- Fixed: mixed LWJGL versions (all LWJGL modules now 3.4.2) and the bundled Java runtime missing jdk.unsupported (sun.misc.Unsafe), which crashed startup.\n- New: native Windows on ARM64 build (Snapdragon X / Adreno). Pick the arm64 MSI on ARM PCs; x64 is still provided.\n- New: if OpenGL 3.3 is missing or too old, a dialog explains what to install ('OpenCL, OpenGL, and Vulkan Compatibility Pack' from the Microsoft Store on Windows on ARM) instead of crashing.\n- New: startup log at %LOCALAPPDATA%\\Aeros Parametrics\\logs\\aeros.log; startup errors are shown in a dialog.\n- New: Aeros blue/green/gold app icon (installer, shortcuts, window).",
+  "msiName": "AerosParametrics-0.2.2-x64.msi",
+  "msiUrl": "https://raw.githubusercontent.com/kyleanthonyhuber-beep/aeros-parametrics-releases/releases/AerosParametrics-0.2.2-x64.msi",
+  "sha256": "a1dd9b4820830c453b256aaf6417a299e1f3a542dc5e9548f40461c2ab5cb147",
+  "size": 89939364,
+  "assets": {
+    "windows-x64": {
+      "msiName": "AerosParametrics-0.2.2-x64.msi",
+      "msiUrl": "https://raw.githubusercontent.com/kyleanthonyhuber-beep/aeros-parametrics-releases/releases/AerosParametrics-0.2.2-x64.msi",
+      "sha256": "a1dd9b4820830c453b256aaf6417a299e1f3a542dc5e9548f40461c2ab5cb147",
+      "size": 89939364
+    },
+    "windows-arm64": {
+      "msiName": "AerosParametrics-0.2.2-arm64.msi",
+      "msiUrl": "https://raw.githubusercontent.com/kyleanthonyhuber-beep/aeros-parametrics-releases/releases/AerosParametrics-0.2.2-arm64.msi",
+      "sha256": "f10f94f5df0c196c5c50cab937dbacf4cd83b163cf234f4a95185e09cb6b47b3",
+      "size": 88265616
+    }
+  },
+  "published": "2026-10-17T05:19:42Z"
+}
