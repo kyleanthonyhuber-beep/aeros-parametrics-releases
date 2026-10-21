@@ -1,19 +1,18 @@
-# Aeros Parametrics 0.4.2
+# Aeros Parametrics 0.4.3
 
-Aeros Parametrics for Windows 0.4.2 (matches Android 0.22.2)
+Aeros Parametrics for Windows 0.4.3 (matches Android 0.22.3)
 
-- Sketch dimension labels and relation glyphs are no longer drawn beneath the feature tree, Properties or the toolbars: a label that would be covered moves into the visible part of the view, as on Android. The plain 3D view still shows none.
-- Screen readers: the Dimension, Linear, Angular, Radius and Diameter buttons read the same longer descriptions as Android; the feature tree's minimize button is a full 48 dp target.
-- Camera clip planes cover the grid around the target (Android 0.21.3 fix): an empty part no longer cuts the view in half.
-- Help: Fillet/Chamfer is Ctrl+6 (was shown as Ctrl+4), Surfaces Ctrl+7, Sheet Metal Ctrl+8.
-- Tested on a real Surface Pro (Snapdragon X Elite, Adreno X1-85, 200 %): installed, CAD kernel loaded, viewport check passed, labels beside (not under) the panels in sketch edit and absent in 3D.
+- Enter completes the active command, the same as OK / ✓: it ends the current line or shape chain, finishes a sketch, completes an edge, face or surface pick, and presses OK in an open dialog. In a text field, Enter does that field's own submit, and a multi-line field keeps its new line.
+- A clicked sketch line, arc, circle or point, part edge or face, assembly component, or drawing item stays highlighted until you deselect it. Hovering with the mouse or pen shows a lighter pre-highlight first. Android uses the same shared colours and rules.
+- Selected and hovered edges and sketch items are now drawn thick enough to see on high-DPI screens. Before this, core OpenGL drew them 1 pixel wide.
+- Tested on a real Surface Pro (Snapdragon X Elite, Adreno X1-85, 200 %): the installer works, the CAD kernel loads and the viewport check passes. Sketch and edge highlights are visible, and the Enter check passes (Enter ends the line chain, then finishes the sketch).
 - Still fully offline.
 
 Downloads: x64 for Intel/AMD PCs, arm64 for Snapdragon (Windows on Arm) PCs. The installer is unsigned, so Windows SmartScreen may warn you: click More info > Run anyway.
 
 | Windows | MSI | SHA-256 |
 |---|---|---|
-| x64 | [AerosParametrics-0.4.2-x64.msi](https://raw.githubusercontent.com/kyleanthonyhuber-beep/aeros-parametrics-releases/releases/AerosParametrics-0.4.2-x64.msi) | `74830647fc24adfebaba91433674d876b4b165de23191702d36fd24d8f6f8380` |
-| arm64 | [AerosParametrics-0.4.2-arm64.msi](https://raw.githubusercontent.com/kyleanthonyhuber-beep/aeros-parametrics-releases/releases/AerosParametrics-0.4.2-arm64.msi) | `eca2fea638f179a8110dccb3a9d89e507782ecc1dfa60056945e8c3841e001bf` |
+| x64 | [AerosParametrics-0.4.3-x64.msi](https://raw.githubusercontent.com/kyleanthonyhuber-beep/aeros-parametrics-releases/releases/AerosParametrics-0.4.3-x64.msi) | `443cc1a4adb1b72b2cc989984972c5f58debad73a17159380c02b358b3d12faa` |
+| arm64 | [AerosParametrics-0.4.3-arm64.msi](https://raw.githubusercontent.com/kyleanthonyhuber-beep/aeros-parametrics-releases/releases/AerosParametrics-0.4.3-arm64.msi) | `af913281d84a975b2ad320705b712f73e4430ec86d35f502f5fd0418494c7bfc` |
 
 Snapdragon / Windows on ARM: use the arm64 MSI. The 3D view needs OpenGL 3.3; on Adreno install Microsoft's free "OpenCL, OpenGL, and Vulkan Compatibility Pack" from the Microsoft Store.
